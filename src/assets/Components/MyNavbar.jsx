@@ -106,7 +106,7 @@ function MyNavbar() {
             </NavbarItem>
         </NavbarContent>
         
-        <NavbarMenu>
+        <NavbarMenu className="bg-[#F5FAFF]">
         
             {menuitems.map((item ,i)=>(
               <NavbarMenuItem key={i}>
