@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Autocomplete,
-  AutocompleteSection,
   AutocompleteItem,
   Button,
 } from "@nextui-org/react";
