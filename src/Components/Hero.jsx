@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react'
 import {
   Autocomplete,
   AutocompleteItem,
   Button,
 } from "@nextui-org/react";
-function HeroArea() {
+
+function Hero() {
   return (
     <section className=" bg-[url('../hero.png')] w-full h-[800px] bg-no-repeat bg-contain overflow-hidden ">
       <div className="container w-[80%] h-auto mx-auto ">
@@ -36,14 +37,14 @@ function HeroArea() {
               </AutocompleteItem>
             </Autocomplete>
             <Button color="primary" className="p-8 mt-1 ">
-              {" "}
-              Search{" "}
+             
+              Search
             </Button>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default HeroArea;
+export default Hero
