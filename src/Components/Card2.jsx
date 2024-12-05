@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ImageSection() {
+function Card2() {
 
   const cards =[
     { images: "./food.png",
@@ -43,4 +43,4 @@ function ImageSection() {
   )
 }
 
-export default ImageSection;
+export default Card2

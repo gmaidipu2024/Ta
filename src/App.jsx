@@ -1,8 +1,9 @@
 import "./App.css";
 import MyNavbar from "./Components/MyNavbar";
 import Hero from "./Components/Hero";
-import ImageSection from "./Components/ImageSection";
-import ThinkCard from "./Components/ThinkCard";
+import Card1 from "./Components/Card1";
+import Card2 from "./Components/Card2";
+
 
 
 function App() {
@@ -10,8 +11,8 @@ function App() {
     <>
       <MyNavbar />
       <Hero />
-      <ImageSection />
-      <ThinkCard/>
+      <Card2/>
+      <Card1/>
       
     </>
   );
