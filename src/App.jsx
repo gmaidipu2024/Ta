@@ -2,7 +2,8 @@ import "./App.css";
 import MyNavbar from "./Components/MyNavbar";
 import Hero from "./Components/Hero";
 import ImageSection from "./Components/ImageSection";
-import ThinkCard from "./Components/ThinkTodo";
+import ThinkCard from "./Components/ThinkCard";
+
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <ImageSection />
       <ThinkCard/>
+      
     </>
   );
 }
