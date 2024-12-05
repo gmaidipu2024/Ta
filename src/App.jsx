@@ -1,20 +1,18 @@
-
-import './App.css'
-import MyNavbar from './Components/MyNavbar'
-import Hero from './Components/Hero'
-import ImageSection from './Components/ImageSection'
-
+import "./App.css";
+import MyNavbar from "./Components/MyNavbar";
+import Hero from "./Components/Hero";
+import ImageSection from "./Components/ImageSection";
+import ThinkCard from "./Components/ThinkTodo";
 
 function App() {
-    return (
+  return (
     <>
-      <MyNavbar/>
-     <Hero />
-     <ImageSection/>
-      
-      
+      <MyNavbar />
+      <Hero />
+      <ImageSection />
+      <ThinkCard/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

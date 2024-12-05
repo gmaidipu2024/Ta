@@ -29,9 +29,9 @@ function ImageSection() {
 
           <div key={index} className='flex flex-col items-center overflow-hidden' >
             
-            <img className=' ' src={card.images}    />
+            <img className=' ' src={card.images} />
             <div>
-            <h2 className='text-center text-[#26395C] font-bold text-xl sm:text-4xl'>{card.title}</h2>   
+            <h2 className='text-center text-[#26395C] font-bold text-xl sm:text-2xl'>{card.title}</h2>   
             </div>
                             
 
