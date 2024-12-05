@@ -4,8 +4,6 @@ import Hero from "./Components/Hero";
 import Card1 from "./Components/Card1";
 import Card2 from "./Components/Card2";
 
-
-
 function App() {
   return (
     <>
