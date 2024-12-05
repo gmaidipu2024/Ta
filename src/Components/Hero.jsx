@@ -7,14 +7,14 @@ import {
 
 function Hero() {
   return (
-    <section className=" bg-[url('../hero.png')] w-full h-[800px] bg-no-repeat bg-contain overflow-hidden ">
+    <section className=" bg-[url('../hero.png')] w-full h-[85vh] bg-no-repeat bg-cover overflow-hidden ">
       <div className="container w-[80%] h-auto mx-auto ">
-        <h1 className="text-xl md:text-5xl w-[50%] px-10 py-10 mt-[30px] text-white font-bold leading-tight ">
+        <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-4xl w-full h-auto lg:w-[50%] px-10 py-10  lg:mt-[30px] text-white font-bold leading-tight text-center lg:text-start ">
           Find amazing things to do anytime, anywhere in Lagos.
         </h1>
 
-        <div className="bg-[#fbfcff] w-[650px] h-[130px] py-10 px-10 ms-10 rounded-xl">
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-3">
+        <div className="bg-[#fbfcff] w-full h-auto lg:w-[650px] lg:h-[130px] py-10 px-10 lg:ms-10 rounded-xl mb-[125px] overflow-hidden ">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 ">
             <Autocomplete
               aria-label="outside"
               label="location"

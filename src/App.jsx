@@ -2,6 +2,7 @@
 import './App.css'
 import MyNavbar from './Components/MyNavbar'
 import Hero from './Components/Hero'
+import ImageSection from './Components/ImageSection'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
       <MyNavbar/>
      <Hero />
+     <ImageSection/>
       
       
     </>

@@ -37,9 +37,9 @@ function MyNavbar() {
       <Navbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        className=" w-full"
+        maxWidth="2xl"
       >
-        <NavbarContent className="sm:hidden " justify="start">
+        <NavbarContent className="sm:hidden" justify="start">
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"} >
 
