@@ -12,13 +12,13 @@ function Carousel() {
     },
     {
       id: 2,
-      imgaes: "./bighand.png",
+      imgaes: "./football.png",
       heading: "Hablu Programmer",
       des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     },
     {
       id: 3,
-      imgaes: "./bighand.png",
+      imgaes: "./Bilding.png",
       heading: "We are learning Front in development",
       des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     },
@@ -62,7 +62,7 @@ function Carousel() {
   ];
 
   return (
-    <section>
+    <section className="overflow-hidden  ">
       <h1 className="text-center text-[#26395C] text-xl md:text-3xl lg:text-4xl font-bold py-4 mb-4">
         See How People are Chilling On Chillsbay
       </h1>
@@ -71,7 +71,7 @@ function Carousel() {
         <div className="flex items-center justify-between">
           <button
             onClick={handelPrev}
-            className=" absolute left-5 transform -translate-x-6 flex items-center justify-center bg-gray-700 text-white w-10 h-10 rounded-full "
+            className=" absolute left-0 transform -translate-x-6 flex items-center justify-center bg-gray-600 text-white w-8 h-8 rounded-full "
           >
             <FaArrowLeft />
           </button>
@@ -124,7 +124,7 @@ function Carousel() {
 
           <button
             onClick={handelNext}
-            className=" absolute right-0 transform -translate-x-6 flex items-center justify-center bg-gray-700 text-white w-10 h-10 rounded-full "
+            className=" absolute right-0 transform -translate-x-6 flex items-center justify-center bg-gray-700 text-white w-8 h-8 rounded-full "
           >
             <FaArrowRight />
           </button>
