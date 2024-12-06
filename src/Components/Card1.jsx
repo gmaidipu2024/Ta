@@ -10,7 +10,7 @@ function Card1() {
     ]
     return (
      <section className='bg-[#189EFF0F]'>
-        <h1 className=' text-[#26395C] text-2xl md:text-3xl lg:text-4xl font-semibold pt-10 mb-5 ml-20'>Top things to do in Lagos</h1>
+        <h1 className=' text-[#26395C] text-xl md:text-3xl lg:text-4xl font-semibold pt-10 mb-5 ml-[15%] md:ml-[140px] lg:ml-[140px] xl:ml-[140px]  '>Top things to do in Lagos</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 container mx-auto p-4 '>
           {
           cards.map((card, index)=>(
