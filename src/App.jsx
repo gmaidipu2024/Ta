@@ -5,6 +5,8 @@ import Card1 from "./Components/Card1";
 import Card2 from "./Components/Card2";
 import ChillsBay from "./Components/ChillsBay";
 import Carousel from "./Components/Carousel";
+import Gallery from "./Components/Gallery";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <Card1/>
       <ChillsBay/>
       <Carousel/>
+      <Gallery/>
     </>
   );
 }
