@@ -6,6 +6,7 @@ import Card2 from "./Components/Card2";
 import ChillsBay from "./Components/ChillsBay";
 import Carousel from "./Components/Carousel";
 import Gallery from "./Components/Gallery";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <ChillsBay/>
       <Carousel/>
       <Gallery/>
+      <Footer/>
     </>
   );
 }
