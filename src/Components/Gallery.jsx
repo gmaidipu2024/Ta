@@ -29,8 +29,8 @@ const Gallery=[
         <h3 className='text-[13px] md:text-2xl lg:text-3xl font-semibold py-5 text-[#26395C]'>See How people are chilling on <span className='text-[#0E8BFF]'>Chillsbay</span> </h3>
         <div className='grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6'>
           {
-            Gallery.map((source)=>(
-                <div className='mt-5 '>
+            Gallery.map((source, i)=>(
+                <div className='mt-5 ' key={i}>
                   <img className='object-cover w-full h-full' src={source.img} alt="" />
                 </div>
             ))
