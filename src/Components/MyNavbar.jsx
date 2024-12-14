@@ -10,8 +10,7 @@ import {
   NavbarMenuItem,
   RangeCalendar,
   Link,
-  } from "@nextui-org/react";
-
+} from "@nextui-org/react";
 import {
   Dropdown,
   DropdownTrigger,
@@ -20,9 +19,14 @@ import {
   Button,
 } from "@nextui-org/react";
 
+
 import { UserIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import Signup from "./Signup";
+import DropDown from "./homepage/Drowpdown";
+
 
 function MyNavbar() {
+ 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuitems = [
     "Eat & Drink",
@@ -41,9 +45,8 @@ function MyNavbar() {
       >
         <NavbarContent className="sm:hidden" justify="start">
           <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"} >
-
-          </NavbarMenuToggle>
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          ></NavbarMenuToggle>
         </NavbarContent>
         <NavbarContent className="sm:hidden">
           <NavbarBrand>
@@ -53,7 +56,6 @@ function MyNavbar() {
         <NavbarContent className=" hidden sm:flex gap-4 justify-center w-full ">
           <NavbarBrand>
             <img src="./title.svg" alt="" />{" "}
-            
           </NavbarBrand>
           <NavbarItem>
             <Link className="text-black ">Eat & Drink</Link>
@@ -61,16 +63,23 @@ function MyNavbar() {
           <NavbarItem>
             <Link className="text-black">
               {" "}
-              Club <sup className="text-white text-xs rounded-full px-2 py-1 bg-[#0E8BFF]"> +HOT</sup>
+              Club{" "}
+              <sup className="text-white text-xs rounded-full px-2 py-1 bg-[#0E8BFF]">
+                {" "}
+                +HOT
+              </sup>
             </Link>
           </NavbarItem>
           <NavbarItem>
             <Dropdown>
               <DropdownTrigger>
-                <Button variant="none">Thinks to do <ChevronDownIcon className="text-[#0E8BFF] h-4 w-4"/> </Button>
+                <Button variant="none">
+                  Thinks to do{" "}
+                  <ChevronDownIcon className="text-[#0E8BFF] h-4 w-4" />{" "}
+                </Button>
               </DropdownTrigger>
               <DropdownMenu aria-label="Static Actions">
-                <DropdownItem key="new">  Water sports</DropdownItem>
+                <DropdownItem key="new"> Water sports</DropdownItem>
                 <DropdownItem key="copy"> Day Parties</DropdownItem>
                 <DropdownItem key="edit"> Outdoors</DropdownItem>
                 <DropdownItem key="edit"> Rentals</DropdownItem>
@@ -80,45 +89,32 @@ function MyNavbar() {
           <NavbarItem className="foreground">
             <img src="./Shoping.svg" alt="" />
           </NavbarItem>
-          <NavbarItem>
-            <Dropdown>
-              <DropdownTrigger>
-                <Button variant="none"> <UserIcon className="text-[#26395C] h-4 w-4"/> Account</Button>
-              </DropdownTrigger>
-              <DropdownMenu aria-label="profile">
-                <DropdownItem key="new">  My Profile</DropdownItem>
-                <DropdownItem key="copy"> My History</DropdownItem>
-                <DropdownItem key="edit"> Sign Out</DropdownItem>
-             </DropdownMenu>
-            </Dropdown>
+
+          <NavbarItem className="mt-[60px]">
+            <Signup className=" "/>
+            {/* {value === true ? <Signup/> : <ProfileDropDown/> } */}
           </NavbarItem>
+
           <NavbarItem>
             <Button color="primary"> Contact Now</Button>
           </NavbarItem>
-        
         </NavbarContent>
         <div className="sm:hidden">
-        <NavbarContent className="w-full">
-        <NavbarItem className="hidden lg:flex ">    
-                </NavbarItem>
-          <NavbarItem>
-            <img src="./Shoping.svg" alt="" />
+          <NavbarContent className="w-full">
+            <NavbarItem className="hidden lg:flex "></NavbarItem>
+            <NavbarItem>
+              <img src="./Shoping.svg" alt="" />
             </NavbarItem>
-        </NavbarContent>
-        
-        <NavbarMenu className="bg-[#F5FAFF]">
-        
-            {menuitems.map((item ,i)=>(
+          </NavbarContent>
+
+          <NavbarMenu className="bg-[#F5FAFF]">
+            {menuitems.map((item, i) => (
               <NavbarMenuItem key={i}>
                 <Link className="w-full text-black"> {item}</Link>
-
               </NavbarMenuItem>
-
             ))}
-          
-        </NavbarMenu>
+          </NavbarMenu>
         </div>
-      
       </Navbar>
     </section>
   );

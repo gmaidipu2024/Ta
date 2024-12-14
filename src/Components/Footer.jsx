@@ -88,8 +88,8 @@ function Footer() {
 
   return (
     <footer className=" py-12 ">
-      <div className=" container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 items-start justify-center gap-12 ">
-        <div className=" mx-auto md:ms-0 ">
+      <div className=" container mx-auto overflow-hidden grid grid-cols-1  md:grid-cols-1  lg:grid-cols-3  items-start justify-center gap-12 ">
+        <div className=" mx-auto lg:ms-0 col-span-1 ">
           <img className="w-fit" src={logo} alt="" />
           <p className="text-sm mb-4"> {copyright} </p>
           <div className="flex gap-4 items-center  mt-3 mb-5 ">
@@ -101,7 +101,7 @@ function Footer() {
           </div>
         </div>
         {/* right section */}
-        <div className="grid grid-cols-1 justify-center md:grid-cols-4 gap-32 mx-auto ">
+        <div className="grid grid-cols-2 justify-center md:grid-cols-4 gap-32 mx-auto ">
           <div className="grid col-span-2  text-md">
             <div>
               <h1 className="text-[#26395C] text-xl font-bold mb-10 border-b "> MENU</h1>
@@ -137,7 +137,7 @@ function Footer() {
                   ))}
           </div>
         </div>
-          {/* lastpart */}
+          {/* last part */}
         <div className="bg-[#F5FAFF] rounded-lg px-16 py-10 mb-2 col-span-1">
           <img src={partnerSection.img} alt="" />
           <h2 className="text-[#26395C] text-3xl font-bold py-2">

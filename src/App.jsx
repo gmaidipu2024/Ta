@@ -7,6 +7,9 @@ import ChillsBay from "./Components/ChillsBay";
 import Carousel from "./Components/Carousel";
 import Gallery from "./Components/Gallery";
 import Footer from "./Components/Footer";
+import Signup from "./Components/Signup";
+import { Dropdown } from "@nextui-org/react";
+
 
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
       <Carousel/>
       <Gallery/>
       <Footer/>
+      
+      
+      
     </>
   );
 }
